@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "antd/dist/antd.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+body {
+    top: 0 !important;
+    font-family: Montserrat, Helvetica, "sans-serif";
+    @apply text-sm;
+
+    b,
+    strong {
+        font-weight: 700;
+    }
+}
+.line-clamp-3 {
+    @apply overflow-hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+}
+@media (min-width: 1150px) {
+    .container {
+        max-width: 1028px;
+    }
+}
+
+.big-container {
+    @media (min-width: 1150px) {
+        max-width: 1800px;
+    }
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+    }
+}
+.contact {
+    @media (min-width: 1150px) {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    right: 0;
+}
+.ant-select-selector {
+    background: transparent !important;
+    border-color: #2699fb !important;
+    .ant-select-selection-item{
+        @apply text-xs;
+    }
+}
+.ant-select-selection-placeholder {
+    color: #2699fb !important;
+    font-size: 12px !important;
+}
+.ant-checkbox-wrapper {
+    .ant-checkbox {
+        .ant-checkbox-inner {
+            border-color: #2699fb !important;
+        }
+    }
+    span {
+        font-size: 10px;
+    }
+}
+.ant-form-item {
+    margin-bottom: 9px;
+    .ant-input {
+        padding: 6px 11px;
+    }
+}

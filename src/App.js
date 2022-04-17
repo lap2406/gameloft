@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import "assets/styles/index.scss";
+import Contact from "components/contact";
+import ContactUs from "components/contact-us";
+import Header from "components/header";
+import Slider from "components/slider";
+import Slick from "components/slick";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Contact />
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <Slider />
+      </div>
+      <ContactUs />
+      <Slick />
+
+    </Fragment>
   );
 }
 

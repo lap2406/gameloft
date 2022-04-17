@@ -6,9 +6,16 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.19.5",
+    "less": "^4.1.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-owl-carousel": "^2.3.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.28.1",
+    "sass": "^1.50.0",
+    "scss": "^0.2.4",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }
