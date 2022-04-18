@@ -9,9 +9,9 @@ const Slider = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col justify-between" style={{height : "calc(100vh - 63px)"}}>
-                <div className="bg-[#2699FB] relative  flex items-end " style={{height : "calc(100vh - 63px - 72px)"}}>
-                    <div className="absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 ">
+            <div className="w-full flex flex-col justify-between min-h-screen relative" >
+                <div className="bg-[#2699FB] relative  flex items-end min-h-screen" >
+                    <div className="absolute transform -translate-y-3/4 -translate-x-1/2 top-[40%] left-1/2 sm:w-auto w-[145px] flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="350.991" height="187.885" viewBox="0 0 350.991 187.885">
                             <g id="Group_436" data-name="Group 436" transform="translate(10.778 8.215)" opacity="0.3">
                                 <g id="Polygon_2" data-name="Polygon 2" transform="translate(-0.212 -0.329)" fill="#fff">
@@ -26,10 +26,10 @@ const Slider = () => {
                         </svg>
 
                     </div>
-                    <div className="container mx-auto py-10">
-                        <div className="text-white w-7/12">
-                            <div className="mb-6">
-                                <h3 className="text-white text-[45px] font-bold leading-tight mb-1">Gameloft game</h3>
+                    <div className="container mx-auto py-10 sm:-translate-y-20 px-3 sm:px-5 mx-auto">
+                        <div className="sm:p-0 px-3 py-4 text-white sm:w-7/12 ">
+                            <div className="sm:mb-6 mb-3">
+                                <h3 className="text-white text-[45px] font-bold leading-tight mb-1 uppercase">Gameloft game</h3>
                                 <div className="flex items-center">
                                     <div className="mr-2">Racing / Action </div> |
                                     <Rate className="ml-2" border={"white"} allowHalf defaultValue={4} />
@@ -40,14 +40,15 @@ const Slider = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#D8EDFF] py-4">
-                    <div className=" container mx-auto">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-[20px] font-bold ">Download latest version </h3>
-                            <div className="flex items-center justify-between">
-                                <img className="ml-[6px] w-[123px] h-10" src={eshop} alt="eshop" />
-                                <img className="ml-[6px] w-[123px] h-10" src={microsoft} alt="microsoft" />
-                                <img className="ml-[6px] w-[123px] h-10" src={steam} alt="steam" />
+                <div className="bg-[#D8EDFF] py-4 sm:absolute bottom-0 left-0 right-0">
+                    <div className=" container px-3 sm:px-5 mx-auto">
+                        <div className="flex flex-wrap items-center justify-between">
+                            <h3 className="text-[20px] font-bold mb-3">Download latest version </h3>
+                            <div className="sm:w-auto w-full grid sm:grid-cols-3 grid-cols-2 items-center gap-3 mb-3">
+                                
+                                <div className="sm:w-[123px] sm:h-10 h-13 overflow-hidden"><img className=" sm:w-[123px] sm:h-10 h-14 overflow-hidden" src={eshop} alt="eshop" /></div>
+                                <div className="sm:w-[123px] sm:h-10 h-13 overflow-hidden"><img className=" sm:w-[123px] sm:h-10 h-14 overflow-hidden" src={microsoft} alt="microsoft" /></div>
+                                <div className="sm:w-[123px] sm:h-10 h-13 overflow-hidden"><img className=" sm:w-[123px] sm:h-10 h-14 overflow-hidden" src={steam} alt="steam" /></div>
                             </div>
                         </div>
                     </div>
