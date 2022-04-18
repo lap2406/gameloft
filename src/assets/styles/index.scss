@@ -16,6 +16,11 @@ body {
         font-weight: 700;
     }
 }
+.scroll-container {
+    min-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 .line-clamp-3 {
     @apply overflow-hidden;
     -webkit-box-orient: vertical;
@@ -51,34 +56,34 @@ body {
 .big-container {
     width: 100%;
 }
-@media (min-width:640px) {
+@media (min-width: 640px) {
     .big-container {
         max-width: 640px;
     }
 }
-@media (min-width:720px) {
+@media (min-width: 720px) {
     .big-container {
-        max-width: 720px
+        max-width: 720px;
     }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .big-container {
-        max-width: 768px
+        max-width: 768px;
     }
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .big-container {
-        max-width: 1024px
+        max-width: 1024px;
     }
 }
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
     .big-container {
-        max-width: 1280px
+        max-width: 1280px;
     }
 }
-@media (min-width:1536px) {
+@media (min-width: 1536px) {
     .big-container {
-        max-width: 1800px
+        max-width: 1800px;
     }
 }
 .contact {
@@ -140,9 +145,15 @@ body {
     }
     .slick-prev {
         left: 44%;
+        @media (max-width: 640px) {
+            left: 30%;
+        }
     }
     .slick-next {
         right: 44%;
+        @media (max-width: 640px) {
+            right: 30%;
+        }
     }
 }
 .animate-spin {

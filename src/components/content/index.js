@@ -106,14 +106,7 @@ const Content = () => {
             active: false,
             title: "Short Title"
         },
-        {
-            active: true,
-            title: "Short Title"
-        },
-        {
-            active: false,
-            title: "Short Title"
-        },
+    
 
     ];
 
@@ -121,10 +114,10 @@ const Content = () => {
         <Fragment>
             <div className="min-h-screen bg-white w-full overflow-hidden">
                 <div className="min-h-screen">
-                    <div className="pt-28 pb-12 container mx-auto ">
+                    <div className="sm:pt-28 sm:pb-12 pt-20 pb-7 container mx-auto px-3 sm:px-5">
                         <div className="">
-                            <h3 className="text-[#2699FB] font-bold text-[45px] leading-10 mb-5">Exclusive Game Content</h3>
-                            <p className="text-[#2699FB] font-normal text-[25px] leading-6 mb-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.</p>
+                            <h3 className="text-[#2699FB] font-bold sm:text-[45px] text-[25px] leading-6  sm:leading-10 mb-5">Exclusive Game Content</h3>
+                            <p className="sm:text-[25px] font-normal text-[#2699FB] text-lg leading-5 sm:leading-6 mb-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.</p>
                         </div>
 
                     </div>
@@ -133,15 +126,15 @@ const Content = () => {
                         <div className="w-full overflow-hidden py-8 relative">
                             <Slider {...settingsContent} className="slick-news ">
                                 {imagesLiveGame.map((item, index) => (
-                                    <div className="p-3">
-                                        <div key={index} className="bg-[#D5ECFF] p-5 flex flex-col justify-between border border-[#2699FB] rounded min-h-[383px] relative">
+                                    <div className="p-3" key={index}>
+                                        <div className="bg-[#D5ECFF] p-5 flex flex-col justify-between border border-[#2699FB] rounded min-h-[383px] relative">
                                             <div className="flex justify-end items-center ">
 
                                                 <div className="flex w-[34px] h-[34px] bg-white rounded-full items-center justify-center relative">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18.462" height="16.837" viewBox="0 0 18.462 16.837">
-                                                        <path id="Path_328" data-name="Path 328" d="M0,10.062V0" transform="translate(9.199 1)" fill="none" stroke="#141414" stroke-linecap="round" stroke-width="2" />
-                                                        <path id="Path_329" data-name="Path 329" d="M-1315.015-710.748l3.133,3.289,2.976-3.289" transform="translate(1321.05 718.983)" fill="none" stroke="#141414" stroke-linecap="round" stroke-width="2" />
-                                                        <path id="Path_330" data-name="Path 330" d="M16.462-2.8V0H0V-2.8" transform="translate(1 15.837)" fill="none" stroke="#141414" stroke-linecap="round" stroke-width="2" />
+                                                        <path id="Path_328" data-name="Path 328" d="M0,10.062V0" transform="translate(9.199 1)" fill="none" stroke="#141414" strokeLinecap="round" strokeWidth="2" />
+                                                        <path id="Path_329" data-name="Path 329" d="M-1315.015-710.748l3.133,3.289,2.976-3.289" transform="translate(1321.05 718.983)" fill="none" stroke="#141414" strokeLinecap="round" strokeWidth="2" />
+                                                        <path id="Path_330" data-name="Path 330" d="M16.462-2.8V0H0V-2.8" transform="translate(1 15.837)" fill="none" stroke="#141414" strokeLinecap="round" strokeWidth="2" />
                                                     </svg>
                                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-300 opacity-75 z-0"></span>
 
