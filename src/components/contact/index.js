@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Rate } from 'antd';
+
 
 const Contact = () => {
 

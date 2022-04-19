@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import logo from 'assets/images/logo-footer.png';
-import React, { useState } from 'react';
-import { Form, Input, Button, Checkbox, Select } from 'antd';
+import React from 'react';
+import {  Select } from 'antd';
 
 const Footer = () => {
 

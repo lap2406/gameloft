@@ -1,8 +1,7 @@
 import { Fragment } from "react";
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import images from "assets/images/live-game/1.png";
-import { Input } from "antd";
+
 
 const Event = () => {
     const [currentNews, setCurrentNews] = useState(1);

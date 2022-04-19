@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import contactus from 'assets/images/contactus.png';
-import React, { useState } from 'react';
-import { Form, Input, Button, Checkbox, Select } from 'antd';
+import React from 'react';
+import { Form, Input, Checkbox, Select } from 'antd';
 
 const Newsletter = () => {
 
