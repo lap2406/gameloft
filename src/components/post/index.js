@@ -131,7 +131,7 @@ const Post = () => {
                             {imagesLiveGame.map((item, index) => (
                                 <div key={index} className="flex justify-center text-center">
                                     <div className="flex justify-center mb-2">
-                                        <a href="https://asphaltlegends.com/" target="_blank" className={item.active ? " p-1 rounded-full border-[3px] border-[#2699FB]" : "p-1 rounded-full border-[3px] border-white"}>
+                                        <a href="https://asphaltlegends.com/" target="_blank"  rel="noreferrer" className={item.active ? " p-1 rounded-full border-[3px] border-[#2699FB]" : "p-1 rounded-full border-[3px] border-white"}>
                                             <img className="sm:w-24 w-[70px] sm:h-24 h-[70px]" src={images} alt={item.title} />
                                         </a>
                                     </div>
