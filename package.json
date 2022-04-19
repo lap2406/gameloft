@@ -2,7 +2,7 @@
   "name": "game-loft",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://lap2406.github.io",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.22",
     "@testing-library/jest-dom": "^5.16.4",
