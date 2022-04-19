@@ -4,7 +4,6 @@ import Slider from "react-slick";
 
 
 const Event = () => {
-    const [currentNews, setCurrentNews] = useState(1);
     const settingsEvent = {
         className: "center",
         centerMode: true,
@@ -30,7 +29,6 @@ const Event = () => {
         </svg>
         ),
 
-        afterChange: current => setCurrentNews(current + 1),
         customPaging: i => (
             <div className="custom-dots relative text-[17px] font-normal text-[#2699FB]">
                 <div className="spin circle flex items-center justify-center rounded-full w-9 h-9">{((i + 1) < 10) ? '0' + (i + 1).toString() : (i + 1).toString()}</div>
