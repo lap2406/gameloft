@@ -1,15 +1,15 @@
-import { Fragment, useEffect, useState } from "react";
-import "assets/styles/index.scss";
-import Contact from "components/contact";
-import Newsletter from "components/newsletter";
-import Header from "components/header";
-import Slider from "components/slider";
-import Post from "components/post";
-import Event from "components/event";
-import Content from "components/content";
-import Footer from "components/footer";
-import 'fullpage.js/vendors/scrolloverflow';
-import ReactFullpage from '@fullpage/react-fullpage';
+import React, { Fragment, useEffect, useState } from "react";
+import "./assets/styles/index.less";
+import Contact from "./components/contact";
+import Newsletter from "./components/newsletter";
+import Header from "./components/header";
+import Slider from "./components/slider";
+import Post from "./components/post";
+import Event from "./components/event";
+import Content from "./components/content";
+import Footer from "./components/footer";
+// import '@fullpage/vendors/scrolloverflow';
+// import ReactFullpage from '@fullpage/react-fullpage';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -56,12 +56,7 @@ function App() {
       <Fragment>
         <Header />
         <Contact />
-        <ReactFullpage
-          scrollingSpeed={1000}
-          render={({ state, fullpageApi }) => {
-            return (
-              <ReactFullpage.Wrapper>
-                <div className="section">
+        <div className="section">
                   <div className="relative w-full">
                     <Slider />
                   </div>
@@ -81,10 +76,6 @@ function App() {
                 <div className="section">
                   <Footer />
                 </div>
-              </ReactFullpage.Wrapper>
-            );
-          }}
-        />
       </Fragment>
     );
   }

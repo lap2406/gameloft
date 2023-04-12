@@ -1,7 +1,6 @@
-import { Fragment } from "react";
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Slider from "react-slick";
-import images from "assets/images/live-game/1.png";
+import images from "./../../assets/images/live-game/1.png";
 
 const Post = () => {
     const [currentNews, setCurrentNews] = useState(1);

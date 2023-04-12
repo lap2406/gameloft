@@ -1,8 +1,8 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { Rate } from 'antd';
-import eshop from 'assets/images/eshop.png';
-import microsoft from 'assets/images/microsoft.png';
-import steam from 'assets/images/steam.png';
+import eshop from './../../assets/images/eshop.png';
+import microsoft from './../../assets/images/microsoft.png';
+import steam from './../../assets/images/steam.png';
 
 
 const Slider = () => {

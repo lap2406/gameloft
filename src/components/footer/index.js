@@ -1,6 +1,5 @@
-import { Fragment } from "react";
-import logo from 'assets/images/logo-footer.png';
-import React from 'react';
+import React, { Fragment } from "react";
+import logo from './../../assets/images/logo-footer.png';
 import {  Select } from 'antd';
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 module.exports = {
     rules: [{
-        test: /\.less$/,
+        test: /\.scss$/,
         use: [{
             loader: 'style-loader',
         }, {

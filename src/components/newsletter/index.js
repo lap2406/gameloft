@@ -1,6 +1,5 @@
-import { Fragment } from "react";
-import contactus from 'assets/images/contactus.png';
-import React from 'react';
+import React, { Fragment } from "react";
+import contactus from './../../assets/images/contactus.png';
 import { Form, Input, Checkbox, Select } from 'antd';
 
 const Newsletter = () => {

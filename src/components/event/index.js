@@ -1,5 +1,4 @@
-import { Fragment } from "react";
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Slider from "react-slick";
 
 
